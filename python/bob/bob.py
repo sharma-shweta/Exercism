@@ -1,5 +1,3 @@
-import re
-
 def hey(what):
 
 	what = what.strip()
@@ -10,7 +8,7 @@ def hey(what):
 	if what.isupper():
 		return 'Whoa, chill out!'
 
-	if '?' in what[-1]:
+	if what.endswith('?'):
 		return 'Sure.'
 		
 	return 'Whatever.'
